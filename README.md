@@ -1,24 +1,12 @@
 # README
+## 参考
+https://qiita.com/otama/items/9e7d00b4fdd8d647b688
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 起動
+docker run -d -p 3000:3000 -v "$PWD":/app otama/rails-app
 
-Things you may want to cover:
+## コンテナ
+docker ps
+docker exec -it <コンテナID> rails g controller top index
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
